@@ -1,30 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: white; /* Ensure the iframe has a white background */
-        }
-    </style>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { background-color: white; }
-    </style>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="Terrance Tan 👨‍💻 semiconductor analyst focused on BI, procurement analytics, stakeholder management, and AI agent automation.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 <meta property="og:type" content="website"/>
@@ -38,17 +16,17 @@
 <title>Terrance Tan 👨‍💻 Portfolio</title>
 <style>
 :root{
-  --bg:#160f1f;--bg2:#1f1630;
-  --accent:#ff7a59;--accent2:#c66bff;--lilac:#ffbf5c;
-  --pink:#ff5c9d;--purple:#c66bff;--cyan:#ff7a59;--lime:#effbf5c;--yellow:#effbf5c;
-  --text:#f5eefb;--muted:#a89bbf;
-  --card:rgba(255,255,255,.05);--border:rgba(255,255,255,.11);
-  --glow:0 0 26px rgba(255,122,89,.28);
-  --shadow:0 20px 50px rgba(0,0,0,.5);
-  --mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
-  --head:'Comic Sans MS','Segoe UI',sans-serif;
-  --body:'Comic Sans MS','Segoe UI',system-ui,sans-serif;
-  --rad:20px;
+--bg:#160f1f;--bg2:#1f1630;
+--accent:#ff7a59;--accent2:#c66bff;--lilac:#ffbf5c;
+--pink:#ff5c9d;--purple:#c66bff;--cyan:#ff7a59;--lime:#effbf5c;--yellow:#effbf5c;
+--text:#f5eefb;--muted:#a89bbf;
+--card:rgba(255,255,255,.05);--border:rgba(255,255,255,.11);
+--glow:0 0 26px rgba(255,122,89,.28);
+--shadow:0 20px 50px rgba(0,0,0,.5);
+--mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
+--head:'Comic Sans MS','Segoe UI',sans-serif;
+--body:'Comic Sans MS','Segoe UI',system-ui,sans-serif;
+--rad:20px;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;scroll-padding-top:90px;}
@@ -61,14 +39,14 @@ body{font-family:var(--body);background:var(--bg);color:var(--text);overflow-x:h
 mask-image:radial-gradient(circle at 50% 25%,#000 0%,transparent 72%);}
 
 body.srs{
-  --bg:#0a0c14;--bg2:#12151f;
-  --accent:#6366f1;--accent2:#2dd4bf;--lilac:#818cf8;
-  --pink:#6366f1;--purple:#818cf8;--cyan:#2dd4bf;--lime:#2dd4bf;--yellow:#2dd4bf;
-  --text:#edf0f7;--muted:#a0aec0;--border:rgba(130,140,180,.16);
-  --glow:0 0 36px rgba(99,102,241,.32);
-  --head:'Space Grotesk','Segoe UI',sans-serif;--body:'Inter','Segoe UI',system-ui,sans-serif;
-  --rad:18px;
-  letter-spacing:-.01em;
+--bg:#0a0c14;--bg2:#12151f;
+--accent:#6366f1;--accent2:#2dd4bf;--lilac:#818cf8;
+--pink:#6366f1;--purple:#818cf8;--cyan:#2dd4bf;--lime:#2dd4bf;--yellow:#2dd4bf;
+--text:#edf0f7;--muted:#a0aec0;--border:rgba(130,140,180,.16);
+--glow:0 0 36px rgba(99,102,241,.32);
+--head:'Space Grotesk','Segoe UI',sans-serif;--body:'Inter','Segoe UI',system-ui,sans-serif;
+--rad:18px;
+letter-spacing:-.01em;
 }
 body.srs{background:radial-gradient(circle at 50% -10%,#151830 0%,#0a0c14 55%);}
 body.srs .orb1{background:var(--accent);opacity:.22;}
@@ -80,12 +58,12 @@ a{color:inherit;}
 
 /* ═══ DELULU CUSTOM CURSOR + EMOJI TRAIL (back by popular demand) ═══ */
 @media (hover:hover) and (pointer:fine){
-  body:not(.srs),
-  body:not(.srs) a,
-  body:not(.srs) button,
-  body:not(.srs) .proj,
-  body:not(.srs) .stat,
-  body:not(.srs) .tcard{cursor:none;}
+body:not(.srs),
+body:not(.srs) a,
+body:not(.srs) button,
+body:not(.srs) .proj,
+body:not(.srs) .stat,
+body:not(.srs) .tcard{cursor:none;}
 }
 .cursor{position:fixed;left:-100px;top:-100px;width:22px;height:22px;border:2px solid var(--lime);
 border-radius:50%;z-index:99999;pointer-events:none;transform:translate(-50%,-50%);
@@ -351,16 +329,15 @@ border-radius:14px;transition:.2s;}
 #mobclose{position:absolute;top:22px;right:24px;font-size:2rem;background:none;border:none;color:var(--text);cursor:pointer;}
 
 @media (prefers-reduced-motion: reduce){
-    *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
-    .floaty,.pop,.orb,.cursor,.trail{display:none!important;}
-    body:not(.srs) body:not(.srs) a,body:not(.srs) button{cursor:auto!important;}
-    .reveal{opacity:1;transform:none;}
-    .fill,.dfill{width:var(--w)!important;}
+*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
+.floaty,.pop,.orb,.cursor,.trail{display:none!important;}
+body:not(.srs) body:not(.srs) a,body:not(.srs) button{cursor:auto!important;}
+.reveal{opacity:1;transform:none;}
+.fill,.dfill{width:var(--w)!important;}
 }
 </style>
 </head>
 <body>
-
 <div class="bgfx" aria-hidden="true"><div class="orb orb1"></div><div class="orb orb2"></div></div>
 <div class="gridfx" aria-hidden="true"></div>
 <div class="cursor" id="cursor" aria-hidden="true"></div>
@@ -426,7 +403,6 @@ border-radius:14px;transition:.2s;}
             <p class="delulu-only">my superpower? <b>talking to literally everyone</b> 🗣️ finance, cost, engineers, procurement AND execs. i'm the human translator between "the data" and "the decision". 🤝</p>
             <p class="delulu-only">also i <b>pioneered ai agents</b> for my whole team 🤯 now robots do my busywork while i look cool. no regrets.</p>
             <p class="delulu-only"><b>tldr:</b> spreadsheets fear me. stakeholders trust me. agents work for me. coffee sustains me. ☕</p>
-            <p class="srs-only block">I'm an <b>analyst in the semiconductor industry</b> with hands-on understanding of the <b>backend process</b> (assembly, test, and advanced packaging) which lets me connect raw data to what actually happens on the floor.</p>
             <p class="srs-only block">A core strength is <b>stakeholder management</b>. I work daily across finance, cost, engineering, procurement, and executive teams, translating technical detail into clear, decision-ready insight for very different audiences.</p>
             <p class="srs-only block">I <b>pioneered the adoption of AI agents across my team</b>, building agents that automate and analyze category data, plus an executive-facing orchestrator that pulls it all together alongside a foundation in actuarial science, BI, and automation.</p>
         </div>
@@ -435,7 +411,7 @@ border-radius:14px;transition:.2s;}
     <div class="stats reveal">
         <div class="stat glass"><div class="n" data-target="5">0</div><div class="l"><span class="delulu-only">functions i wrangle 🤠</span><span class="srs-only">functions I collaborate with</span></div></div>
         <div class="stat glass"><div class="n" data-target="4">0</div><div class="l"><span class="delulu-only">regions covered 🌍</span><span class="srs-only">regions engaged</span></div></div>
-        <div class="stat glass"><div class="n" data-target="6">0</div><div class="l"><span class="delulu-only">actuarial exams 💀</span><span class="srs-only">actuarial exams passed</span></div></div>
+        <div class="stat glass"><div class="n" data-target="6">0</div><div class="l"><span class="delulu-only">actuarial exams passed 💀</span><span class="srs-only">actuarial exams</span></div></div>
         <div class="stat glass"><div class="n" data-target="6">0</div><div class="l"><span class="delulu-only">projects that slap 🔥</span><span class="srs-only">featured projects</span></div></div>
     </div>
 </section>
@@ -742,3 +718,4 @@ style.top=Math.random()*100+"vh";document.body.appendChild(el);setTimeout(()=>el
 </script>
 </body>
 </html>
+
