@@ -655,7 +655,17 @@
     </html>
 
             <script>
-
+            
+            </script>
+            <script>
+                // ... all your existing JavaScript ...
+            
+                // Always start on the Serious page
+                window.addEventListener("DOMContentLoaded", () => {
+                    if (!document.body.classList.contains("srs")) {
+                        chord();
+                    }
+                });
             </script>
             </body>
             </html>
